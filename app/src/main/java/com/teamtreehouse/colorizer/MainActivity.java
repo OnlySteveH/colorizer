@@ -1,7 +1,9 @@
 package com.teamtreehouse.colorizer;
 
+import android.graphics.Color;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
+import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         MenuItem menuItem = menu.add("Next image");
         menuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
         menuItem.setIcon(R.drawable.ic_add_a_photo_black_24dp);
+        menuItem.getIcon().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_ATOP);
         return true;
     }
 
