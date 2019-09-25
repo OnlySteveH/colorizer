@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         loadImage();
     }
 
+
+
     private void loadImage() {
         Glide.with(this).load(imageResIds[imageIndex]).into(imageView);
     }
