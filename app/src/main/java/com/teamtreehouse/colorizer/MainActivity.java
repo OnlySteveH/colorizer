@@ -76,6 +76,11 @@ public class MainActivity extends AppCompatActivity {
                 updateColors();
                 item.setChecked(blue);
                 break;
+            case R.id.reset:
+                imageView.clearColorFilter();
+                red = green = blue = color = true;
+                invalidateOptionsMenu();
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
