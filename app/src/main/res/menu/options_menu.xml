@@ -5,25 +5,27 @@
     <item
         android:id="@+id/nextImage"
         android:icon="@drawable/ic_add_a_photo_black_24dp"
-        android:title="Next Image"
+        android:title="@string/next_image"
         app:showAsAction="always" />
     <item
         android:id="@+id/color"
-        android:title="Colour"
+        android:title="@string/colour"
         app:showAsAction="always" />
-    <item
-        android:id="@+id/red"
-        android:checkable="true"
-        android:title="Red" />
-    <item
-        android:id="@+id/green"
-        android:checkable="true"
-        android:title="Green" />
-    <item
-        android:id="@+id/blue"
-        android:checkable="true"
-        android:title="Item" />
+    <group android:id="@+id/colorGroup">
+        <item
+            android:id="@+id/red"
+            android:checkable="true"
+            android:title="@string/red" />
+        <item
+            android:id="@+id/green"
+            android:checkable="true"
+            android:title="@string/green" />
+        <item
+            android:id="@+id/blue"
+            android:checkable="true"
+            android:title="@string/blue" />
+    </group>
     <item
         android:id="@+id/reset"
-        android:title="Item" />
+        android:title="@string/reset" />
 </menu>
