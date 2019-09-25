@@ -61,6 +61,21 @@ public class MainActivity extends AppCompatActivity {
                 updateSaturation();
                 invalidateOptionsMenu();
                 break;
+            case R.id.red:
+                red = !red;
+                updateColors();
+                item.setChecked(red);
+                break;
+            case R.id.green:
+                green = !green;
+                updateColors();
+                item.setChecked(green);
+                break;
+            case R.id.blue:
+                blue = !blue;
+                updateColors();
+                item.setChecked(blue);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
